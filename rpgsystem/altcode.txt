@@ -1,0 +1,372 @@
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////AMMO10
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "ammo10" ) )
+		{	
+			int ammo10unlock = 1000; //hardcoded skillpoint cost of ammo10
+						
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= ammo10unlock) 
+			{
+				//need setter getter for ammo10	
+				int ammoBonus = 0.1f;
+				//bool ammouL = true;
+				//gameLocal.GetLocalPlayer()->setammouL(ammouL);
+				gameLocal.GetLocalPlayer()->setAmmobonus(ammoBonus);
+				gameLocal.Printf("A bonus of 10 percent gained towards your fire rate.");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points. This skill increases the fire rate of your weapon.");
+				//bool ammouL = false;
+				//gameLocal.GetLocalPlayer()->setammouL(ammouL);	
+			}
+		}
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////AMMO20
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "ammo20" ) )
+		{	
+			//hardcoded skillpoint cost of ammo20
+			int ammo20unlock = 2000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= ammo20unlock) 
+			{
+				//need setter getter for ammo20	
+				int ammoBonus = 0.2f;
+				//bool ammouL = true;
+				//gameLocal.GetLocalPlayer()->setammouL(ammouL);
+				gameLocal.GetLocalPlayer()->setAmmobonus(ammoBonus);
+				gameLocal.Printf("A bonus of 20 percent gained towards your fire rate.");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Ammo Lv1 (ammo10) must also be unlocked. This skill increases the fire rate of your weapon.");
+				//bool ammouL = false;
+				//gameLocal.GetLocalPlayer()->setammouL(ammouL);	
+			}
+		}
+
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////AMMO30
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "ammo30" ) )
+		{	
+			//hardcoded skillpoint cost of ammo30
+			int ammo30unlock = 3000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= ammo30unlock) 
+			{
+				//need setter getter for ammo30	
+				int ammoBonus = 0.3f;
+				//bool ammouL = true;
+				//gameLocal.GetLocalPlayer()->setammouL(ammouL);
+				gameLocal.GetLocalPlayer()->setAmmobonus(ammoBonus);
+				gameLocal.Printf("A bonus of 30 percent gained towards your fire rate.");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Ammo Lv2 (ammo20) must also be unlocked. This skill increases the fire rate of your weapon.");
+				//bool ammouL = false;
+				//gameLocal.GetLocalPlayer()->setammouL(ammouL);		
+			}
+		}
+		
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Haste10
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "haste10" ) )
+		{	
+			//hardcoded skillpoint cost of haste10
+			int haste10unlock = 1000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= haste10unlock) 
+			{
+				//need setter getter for haste10	
+				int hasteBonus = 0.1f;
+				//bool hasteuL = true;
+				//gameLocal.GetLocalPlayer()->setammouL(hasteuL);
+				gameLocal.GetLocalPlayer()->setHastebonus(hasteBonus);
+				gameLocal.Printf("A bonus of 10 percent haste, slow it down there sanic...");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points. This skill increases your rate of haste.");
+				//bool hasteuL = false;
+				//gameLocal.GetLocalPlayer()->sethasteuL(hasteuL);	
+				}
+		}
+		
+		//////////////////////////////////////////////////////////////////////////////////////
+		/////////////Haste20
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "haste20" ) )
+		{	
+			//hardcoded skillpoint cost of haste20
+			int haste20unlock = 2000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= haste20unlock) 
+			{
+				//need setter getter for haste20	
+				int hasteBonus = 0.2f;
+				//bool hasteuL = true;
+				//gameLocal.GetLocalPlayer()->setammouL(hasteuL);
+				gameLocal.GetLocalPlayer()->setHastebonus(hasteBonus);
+				gameLocal.Printf("A bonus of 20 percent haste, really, slow it down there sanic...");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Haste Lv1 (haste10) must also be unlocked.. This skill increases your rate of haste.");
+				//bool hasteuL = false;
+				//gameLocal.GetLocalPlayer()->sethasteuL(hasteuL);
+				}
+		}
+
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Haste30
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "haste30" ) )
+		{	
+			//hardcoded skillpoint cost of haste30
+			int haste30unlock = 3000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= haste30unlock) 
+			{
+				//need setter getter for haste30	
+				int hasteBonus = 0.3f;
+				//bool hasteuL = true;
+				//gameLocal.GetLocalPlayer()->setammouL(hasteuL);
+				gameLocal.GetLocalPlayer()->setHastebonus(hasteBonus);
+				gameLocal.Printf("A bonus of 30 percent haste, gotta go fast...");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Haste Lv2 (haste20) must also be unlocked.. This skill increases your rate of haste.");
+				//bool hasteuL = false;
+				//gameLocal.GetLocalPlayer()->sethasteuL(hasteuL);
+				}
+		}
+
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Damage10
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "damage10" ) )
+		{	
+			//hardcoded skillpoint cost of damage10
+			int damage10unlock = 1000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= damage10unlock) 
+			{
+				//need setter getter for damage10	
+				int damageBonus = 0.1f;
+				//bool damageuL = true;
+				//gameLocal.GetLocalPlayer()->setdamageuL(damageuL);
+				gameLocal.GetLocalPlayer()->setDamagebonus(damageBonus);
+				gameLocal.Printf("A bonus of 10 percent has been added to weapon damage, pew pew...");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points. This skill increases weapons damage.");
+			//	bool damageuL = false;
+			//	gameLocal.GetLocalPlayer()->setdamageuL(damageuL);
+				}
+		}
+		
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Damage20
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "damage20" ) )
+		{	
+			//hardcoded skillpoint cost of damage20
+			int damage20unlock = 2000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= damage20unlock) 
+			{
+				//need setter getter for damage20	
+				int damageBonus = 0.2f;
+				//bool damageuL = true;
+				//gameLocal.GetLocalPlayer()->setdamageuL(damageuL);
+				gameLocal.GetLocalPlayer()->setDamagebonus(damageBonus);
+				gameLocal.Printf("A bonus of 20 percent has been added to weapon damage, pew pew...");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Damage Lv1 (damage10) must also be unlocked.. This skill increases weapons damage.");
+				//bool damageuL = false;
+				//gameLocal.GetLocalPlayer()->setdamageuL(damageuL);
+				}
+		}
+
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Damage30
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "damage30" ) )
+		{	
+			//hardcoded skillpoint cost of damage30
+			int damage30unlock = 3000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= damage30unlock) 
+			{
+				//need setter getter for damage30	
+				int damageBonus = 0.3f;
+				//bool damageuL = true;
+				//gameLocal.GetLocalPlayer()->setdamageuL(damageuL);
+				gameLocal.GetLocalPlayer()->setDamagebonus(damageBonus);
+				gameLocal.Printf("A bonus of 30 percent has been added to weapon damage, pew pew...");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Damage Lv2 (damage20) must also be unlocked.. This skill increases weapons damage.");
+				//bool damageuL = false;
+				//gameLocal.GetLocalPlayer()->setdamageuL(damageuL);
+				}
+		}
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Force10
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "force10" ) )
+		{	
+			//hardcoded skillpoint cost of force10
+			int force10unlock = 1000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= force10unlock) 
+			{
+				//need setter getter for force10	
+				int forceBonus = 0.1f;
+				//bool forceuL = true;
+				//gameLocal.GetLocalPlayer()->setforceuL(forceuL);
+				gameLocal.GetLocalPlayer()->setForcebonus(forceBonus);
+				gameLocal.Printf("A bonus of 10 percent has been added to force pushback, fwoosh...?");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points. This skill increases pushback force.");
+				//bool forceuL = false;
+				//gameLocal.GetLocalPlayer()->setforceuL(forceuL);
+				}
+		}
+
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Force20
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "force20" ) )
+		{	
+			//hardcoded skillpoint cost of force20
+			int force20unlock = 2000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= force20unlock) 
+			{
+				//need setter getter for force20	
+				int forceBonus = 0.2f;
+				//bool forceuL = true;
+				//gameLocal.GetLocalPlayer()->setforceuL(forceuL);
+				gameLocal.GetLocalPlayer()->setForcebonus(forceBonus);
+				gameLocal.Printf("A bonus of 20 percent has been added to force pushback, fwoosh...?");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Force Lv1 (force10) must also be unlocked.. This skill increases pushback force.");
+				//bool forceuL = false;
+				//gameLocal.GetLocalPlayer()->setforceuL(forceuL);
+				}
+		}
+
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Force30
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "force30" ) )
+		{	
+			//hardcoded skillpoint cost of force30
+			int force30unlock = 3000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= force30unlock) 
+			{
+				//need setter getter for force30	
+				int forceBonus = 0.3f;
+				//bool forceuL = true;
+				//gameLocal.GetLocalPlayer()->setforceuL(forceuL);
+				gameLocal.GetLocalPlayer()->setForcebonus(forceBonus);
+				gameLocal.Printf("A bonus of 30 percent has been added to force pushback, fwoosh...?");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Force Lv2 (force20) must also be unlocked.. This skill increases pushback force.");
+				//bool forceuL = false;
+				//gameLocal.GetLocalPlayer()->setforceuL(forceuL);
+				}
+		}
+
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Melee10
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "melee10" ) )
+		{	
+			//hardcoded skillpoint cost of melee10
+			int melee10unlock = 1000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= melee10unlock) 
+			{
+				//need setter getter for melee10	
+				int meleeBonus = 0.1f;
+				//bool meleeuL = true;
+				//gameLocal.GetLocalPlayer()->setmeleeuL(meleeuL);
+				gameLocal.GetLocalPlayer()->setMeleebonus(meleeBonus);
+				gameLocal.Printf("A bonus of 10 percent has been added to physical strength, pow right in the kisser!");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points. This skill increases physical strength.");
+				//bool meleeuL = false;
+				//gameLocal.GetLocalPlayer()->setmeleeuL(meleeuL);
+				}
+		}
+		
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Melee20
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "melee20" ) )
+		{	
+			//hardcoded skillpoint cost of melee20
+			int melee20unlock = 2000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= melee20unlock) 
+			{
+				//need setter getter for melee20	
+				int meleeBonus = 0.2f;
+				//bool meleeuL = true;
+				//gameLocal.GetLocalPlayer()->setmeleeuL(meleeuL);
+				gameLocal.GetLocalPlayer()->setMeleebonus(meleeBonus);
+				gameLocal.Printf("A bonus of 20 percent has been added to physical strength, pow right in the kisser!");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Melee Lv1 (melee10) must also be unlocked.. This skill increases physical strength.");
+				//bool meleeuL = false;
+				//gameLocal.GetLocalPlayer()->setmeleeuL(meleeuL);
+				}
+		}
+
+		///////////////////////////////////////////////////////////////////////////////////////
+		/////////////Melee30
+		///////////////////////////////////////////////////////////////////////////////////////
+		
+		if ( !idStr::Cmp( skill, "melee30" ) )
+		{	
+			//hardcoded skillpoint cost of melee20
+			int melee30unlock = 3000;
+			
+			if(gameLocal.GetLocalPlayer()->getSkillpoints() >= melee30unlock) 
+			{
+				//need setter getter for melee30	
+				int meleeBonus = 0.3f;
+				//bool meleeuL = true;
+				//gameLocal.GetLocalPlayer()->setmeleeuL(meleeuL);
+				gameLocal.GetLocalPlayer()->setMeleebonus(meleeBonus);
+				gameLocal.Printf("A bonus of 30 percent has been added to physical strength, pow, to the moon Alice!");
+			}
+			else{
+				gameLocal.Printf("You can not unlock this skill without the required skill points, skill Melee Lv2 (melee20) must also be unlocked.. This skill increases physical strength.");
+				//bool meleeuL = false;
+				//gameLocal.GetLocalPlayer()->setmeleeuL(meleeuL);
+				}
+		}
+}
